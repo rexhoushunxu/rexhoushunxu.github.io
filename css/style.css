@@ -1,0 +1,230 @@
+/* ============================================================
+  HEADER
+============================================================ */
+
+#logo img{
+	display: block;
+	margin: 0 auto;
+	width: 300px;
+}
+
+#subheader{
+	margin: 0 60px;
+	margin-top: 20px;
+	text-align: center;
+	font-size: 16px;
+}
+
+
+/* ============================================================
+  MAIN
+============================================================ */
+
+/* overriding settings in base.css */
+
+
+main{
+	margin: 0;
+	text-align: center;
+}
+
+.gifcontainer {
+    background-image:url('img/timelapse.gif');
+    background-size:cover;
+}
+
+.button {
+	background: rgba(30, 30, 30, 0.8);
+	border-radius: 3px;
+	color: white;
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 600;
+	margin-top: 25px;
+	margin-bottom: 30px;
+	padding: 8px 18px;
+	transition: 100ms;
+}
+
+.button:hover {
+	background: rgba(30, 30, 30, 1);
+	transform: scale(1.04);
+}
+
+.container{
+	max-width: 450px;
+	padding: 0;
+}
+
+.item{
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	display: block;
+	overflow: hidden;
+	margin: 15px auto;
+	height: 250px;
+	position: relative;
+	text-align: left;
+	transition: 0.3s;
+	width: 300px;
+}
+
+.item img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 3px
+	width: 300px;
+}
+
+.item:hover {
+	box-shadow: 0px 0px 40px rgba(12, 12, 12, 0.4);
+	transform: scale(1.06, 1.06);
+}
+
+.description {
+	height: 70px;
+	width: 100%;
+	padding: 10px;
+	padding-left: 20px;
+	position: absolute;
+	opacity: 0;
+	background: rgba(255,255,255,.85);
+	color: #505050;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	-ms-transform: translateY(0px);
+	transform: translateY(0px);
+}
+
+.semester{
+	font-size: 28px;
+	font-weight: 500;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 30px 0 15px;
+}
+
+/* start  main hover effects */
+.description {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.1s 0.3s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.1s 0.3s;
+	transition: transform 0.3s, opacity 0.1s 0.3s;
+}
+
+.item:hover .description{
+	-webkit-transform: translateY(-70px);
+	-moz-transform: translateY(-70px);
+	-ms-transform: translateY(-70px);
+	transform: translateY(-70px);
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.1s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.1s;
+	transition: transform 0.3s, opacity 0.1s;
+}
+
+.item:hover .description{
+	opacity: 1;
+}
+/* end hover effects */
+
+.title{
+	font-weight: 700;
+	font-size: 16px;
+}
+
+.view-site{
+	font-size: 12px;
+	padding: 7px 10px;
+	background: #505050;
+	color: #f3f3f3;
+	font-weight: 400;
+	text-align: center;
+	border-radius: 5px;
+	position: absolute;
+	right: 16px;
+	bottom: 18px;
+	opacity: .75;
+	transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+}
+
+.view-site:hover{
+	opacity: 1;
+}
+
+
+/* ============================================================
+  FOOTER
+============================================================ */
+
+#about{
+	max-width: 500px;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 18px;
+}
+
+p a{
+	text-decoration: underline;
+}
+
+.footer-button {
+	background: rgba(236, 240, 241, 1.0);
+	border-radius: 3px;
+	color: rgba(0, 0, 0, 0.8);
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 600;
+	margin-top: 25px;
+	padding: 8px 12px;
+}
+
+
+/* ============================================================
+  MEDIA QUERIES 600-960PX
+============================================================ */
+@media all and (min-width: 700px) {
+
+	.container{
+		max-width: 700px;
+	}
+
+	#logo img{
+		width: 400px;
+	}
+
+	.item{
+		width: 300px;
+		display: inline-block;
+		margin: 24px 24px;
+	}
+}
+
+/* ============================================================
+  MEDIA QUERIES >960PX
+============================================================ */
+@media all and (min-width: 960px) {
+
+	.container{
+		max-width: 960px;
+	}
+
+	#logo img{
+		width: 500px;
+	}
+
+	.item{
+		width: 400px;
+		display: inline-block;
+		margin: 30px 39px;
+	}
+
+	.item img{
+		width: 400px;
+	}
+
+}
