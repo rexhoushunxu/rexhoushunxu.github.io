@@ -6,24 +6,26 @@
     <title>University of California Berkeley Student Technology Services</title>
     <link rel="stylesheet" type="text/css" href="./University of California Berkeley Student Technology Services_files/sts-templates.css">
 
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+    	<link rel="shortcut icon" href="img/logo black.jpg">
+
 </head>
 
 
 <body>
 
-<section class="title">
-    <div class="content">
-        <div class="b-wordmark"></div>
-        <h1>Student Technology Services Internal Tools</h1>
-    </div>
-</section>
-
+<header>
+  <div class="sectiontitle">Student Technology Services Internal Tools</div>
+</header>
 
 
 <section class="main">
-    <div class="content">
+    <div class="container">
 
-        <h1>Admin Manage</h1>
+        <div class="sectionsubtitle">Admin Manage</div>
 
         <form action="https://stsapps.berkeley.edu/cgi-bin/prot/users/nr" method="GET">
             <table class="data-display">
@@ -85,7 +87,7 @@
                     <td colspan="3"><input type="TEXT" name="uid" size="24" maxsize="24"></td>
                 </tr>
                 <tr>
-                    <td colspan="8" scope="col"><input type="SUBMIT" value="Lookup" class="submit"></td>
+                    <td colspan="8" scope="col"><input type="SUBMIT" value="Lookup" class="button"></td>
                 </tr>
             </tbody></table>
         </form>
@@ -114,12 +116,12 @@
                         </select>
                     </td>
                     <td scope="row" colspan="6">Switch Name or IP</td>
-                    <td><input type="TEXT" name="device" size="24" maxsize="24"></td>
+                    <td><input type="TEXT" name="device" size="24" maxsize="24" ></td>
 
                 </tr>
                 <tr>
                     <td scope="col" colspan="6">
-                        <a class="textbutton" href="https://stsapps.berkeley.edu/cgi-bin/prot/devices/subnets">List/Edit Subnets</a>
+                        <a class="textbutton" href="https://stsapps.berkeley.edu/cgi-bin/prot/devices/subnets" >List/Edit Subnets </a>
                         <!-- <a class="textbutton" href="/cgi-bin/prot/devices/bootstrap">New Device</a> -->
                         <!-- <a class="textbutton" href="/cgi-bin/prot/devices/where-is">Locate Current Port</a> -->
                         <a class="textbutton" href="https://stsapps.berkeley.edu/cgi-bin/prot/devices/vlan_configs">List/Edit Vlan Configs</a>
@@ -128,14 +130,13 @@
                 </tr>
     			<tr>
                     <td colspan="2" scope="col">
-                        <input type="SUBMIT" value="View" name="SUBMIT4" class="submit">
-                        <input type="SUBMIT" value="Print" name="print" class="submit">
+                        <input type="SUBMIT" value="View" name="SUBMIT4" class="button">
+                        <input type="SUBMIT" value="Print" name="print" class="button">
                     </td>
                 </tr>
             </tbody></table>
         </form>
-
-        <h1>STS NetReg Observation Tool (SNOT)</h1>
+        <div class="sectionsubtitle">STS NetReg Observation Tool (SNOT)</div>
 
         <form action="https://stsapps.berkeley.edu/internal/apps/netreg/lookup" method="GET">
             <table class="data-display">
@@ -147,7 +148,7 @@
                 <tbody><tr><td scope="row">Numeric CalNet UID</td><td><input name="uid"></td></tr>
                 <tr><td scope="row">MAC Address</td><td><input name="mac"></td></tr>
             </tbody></table>
-            <input type="submit" value="Lookup">
+            <input type="submit" value="Lookup" class="button">
         </form>
 
         <!--
@@ -164,9 +165,9 @@
             </tr>
         </table>
         -->
-        <h1>Inventory Management</h1>
+        <div class="sectionsubtitle">Inventory Management</div>
         <div class="content">
-            <a href="https://services.housing.berkeley.edu/inven/" class="home-link">Inventory Tool</a>
+            <a href="https://services.housing.berkeley.edu/inven/" class="button">Inventory Tool</a>
         </div>
 
     </div>
