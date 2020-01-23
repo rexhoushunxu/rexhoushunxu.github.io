@@ -1,166 +1,148 @@
-<!DOCTYPE html>
-<!-- saved from url=(0109)file:///C:/Users/rexxu/Desktop/University%20of%20California%20Berkeley%20Student%20Technology%20Services.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!DOCTYPE>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>University of California Berkeley Student Technology Services</title>
-    <link rel="stylesheet" type="text/css" href="./University of California Berkeley Student Technology Services_files/sts-templates.css">
+<html>
 
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/style.css">
+<head>
+	<!-- title and meta -->
+  	<meta charset="utf-8">
+  	<meta content="width=device-width,initial-scale=1.0" name="viewport">
 
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
-    	<link rel="shortcut icon" href="img/logo black.jpg">
+		<meta property="og:url" content="http://www.rexhoushunxu.com">
+		<meta property="og:title" content="Rex Xu Project Website">
+		<meta property="og:description" content="Example website created as resume and portfolio">
+		<meta property="og:image" content="">
 
+  	<title>rexxu Showcase</title>
+
+  	<!-- css -->
+  	<link rel="stylesheet" href="css/base.css">
+  	<link rel="stylesheet" href="css/style.css">
+
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+  	<link rel="shortcut icon" href="img/logo black.jpg">
 </head>
-
 
 <body>
 
-<header>
-  <div class="sectiontitle">Student Technology Services Internal Tools</div>
-</header>
+	<div class="wrapper">
 
-<section class="main">
-    <div class="container">
+		<header>
+			<div id="logo">
+			<!--	<img src="img/rexxu Showcase.png"> -->
+			</div>
 
-      <div class="sectionsubtitle">Network Devices</div>
-      <form action="https://stsapps.berkeley.edu/cgi-bin/prot/devices/view" method="GET">
-          <table class="data-display">
-              <tbody>
-              <tr>
-                  <td scope="row">Location Name</td>
-                  <td>
-                      <select name="unit">
-                          <option value="0">Choose a Unit</option>
-                          <option value="1">Unit 1</option>
-                          <option value="2">Unit 2</option>
-                          <option value="3">Unit 3, Cleary, Manville</option>
-                          <option value="4">Unit 4</option>
-                          <option value="5">CKC</option>
-                          <option value="6">UVA</option>
-                          <option value="7">RSSB</option>
-                          <option value="100">ALL - by name</option>
-                          <option value="101">ALL - by IP</option>
-                      </select>
-                  </td>
-                  <td scope="row" colspan="6">Switch Name or IP</td>
-                  <td><input type="TEXT" name="device" size="24" maxsize="24" ></td>
+			<div id="subheader">Website is Under Construction and Subject to Change</div>
+		</header>
 
-              </tr>
-              <tr>
-                  <td scope="col" colspan="6">
-                      <a class="textbutton" href="https://stsapps.berkeley.edu/cgi-bin/prot/devices/subnets" >List/Edit Subnets </a>
-                      <!-- <a class="textbutton" href="/cgi-bin/prot/devices/bootstrap">New Device</a> -->
-                      <!-- <a class="textbutton" href="/cgi-bin/prot/devices/where-is">Locate Current Port</a> -->
-                      <a class="textbutton" href="https://stsapps.berkeley.edu/cgi-bin/prot/devices/vlan_configs">List/Edit Vlan Configs</a>
-                  </td>
+		<main>
+            <div class="container">
 
-              </tr>
-        <tr>
-                  <td colspan="2" scope="col">
-                      <input type="SUBMIT" value="View" name="SUBMIT4" class="button">
-                      <input type="SUBMIT" value="Print" name="print" class="button">
-                  </td>
-              </tr>
-          </tbody></table>
-      </form>
+                <a target="_blank" href="rexhoushunxu.github.io/profile" class="button">Learn More</a>
+                <div class="sectiontitle">Access</div>
 
-        <div class="sectionsubtitle">Resident Lookup</div>
-        <form action="https://stsapps.berkeley.edu/cgi-bin/prot/users/nr" method="GET">
-            <table class="data-display">
-                <tbody>
-                <tr>
-                    <td scope="row">SID</td>
-                    <td><input type="TEXT" name="sid" size="24" maxsize="24"></td>
-                    <td scope="row">CID</td>
-                    <td colspan="3"><input type="TEXT" name="cid" size="24" maxsize="24"></td>
-                </tr>
-                <tr>
-                    <td scope="row">First Name</td>
-                    <td><input type="TEXT" name="fname" size="24"></td>
-                    <td scope="row">Last Name</td>
-                    <td colspan="3"><input type="TEXT" name="lname" size="24"></td>
-                </tr>
-                <tr>
-                    <td scope="row">Unit</td>
-                    <td>
-                        <select name="unit">
-                            <option value="">All Units</option>
-                            <option value="U1">Unit 1 (&amp; CB, Jackson House)</option>
-                            <option value="U2">Unit 2</option>
-                            <option value="U3">Unit 3 (&amp; Manville)</option>
-                            <option value="U4">Unit 4</option>
-                            <option value="U5">Unit 5</option>
-                            <option value="UV">UVA</option>
-                        </select>
-                    </td>
-                    <td scope="row">Hall</td>
-                    <td>
-                        <input type="text" name="hall" size="6">
-                    </td>
-                    <td scope="row">Room</td>
-                    <td>
-                        <input type="TEXT" name="room" size="6">
-                    </td>
-                </tr>
-                <tr>
-                    <!-- <td scope="row">Room Phone</td>
-                    <td><input type="TEXT" name="phone" size="8" maxsize="10"></td> -->
-                    <td scope="row">Mobile Phone</td>
-                    <td colspan="3"><input name="mobile_phone" type="text" size="24"></td>
-                </tr>
-                <!-- <tr>
-                    <td scope="row">IP Address</td>
-                    <td><input type="TEXT" name="ip" size="15" maxsize="15"></td>
-                    <td scope="row">MAC Address</td>
-                    <td colspan="3"><input type="TEXT" name="mac" size="12" maxsize="12"></td>
-                </tr> -->
-                <tr>
-                    <td scope="row">Email</td>
-                    <td><input type="TEXT" name="email" size="24" maxsize="24"></td>
-                    <td scope="row">UID</td>
-                    <td colspan="3"><input type="TEXT" name="uid" size="24" maxsize="24"></td>
-                </tr>
-                <tr>
-                    <td colspan="8" scope="col"><input type="SUBMIT" value="Lookup" class="button"></td>
-                </tr>
-            </tbody></table>
-        </form>
+                <div class="item">
+                    <a target="_blank" href="rexhoushunxu.github.io/patchpage">
+                        <img src="img/StudentTech.jpg">
+                    </a>
+                    <div class="description">
+                        <div class="title">STS Tools</div>
+                        <div class="by">Front End for Limited STS Tools</div>
+                        <div class="view-site">
+                            <a target="_blank" href="rexhoushunxu.github.io/patchpage">View Site</a>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="item">
+                    <a target="_blank" href="http://www.gooogle.com">
+                        <img src="img/rexxu Logo.jpg">
+                    </a>
+                    <div class="description">
+                        <div class="title">Fake Project</div>
+                        <div class="by">July 5, 2018</div>
+                        <div class="view-site">
+                            <a target="_blank" href="http://www.gooogle.com">View Site</a>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="sectionsubtitle">STS NetReg Observation Tool (SNOT)</div>
+                <div class="item">
+                    <a target="_blank" href="http://www.gooogle.com">
+                        <img src="img/rexxu Logo.jpg">
+                    </a>
+                    <div class="description">
+                        <div class="title">Fake Project</div>
+                        <div class="by">July 5, 2018</div>
+                        <div class="view-site">
+                            <a target="_blank" href="http://www.gooogle.com">View Site</a>
+                        </div>
+                    </div>
+                </div>
 
-        <form action="https://stsapps.berkeley.edu/internal/apps/netreg/lookup" method="GET">
-            <table class="data-display">
-                <tbody><tr><td scope="row">Numeric CalNet UID</td><td><input name="uid"></td></tr>
-                <tr><td scope="row">MAC Address</td><td><input name="mac"></td></tr>
-            </tbody></table>
-            <input type="submit" value="Lookup" class="button">
-        </form>
+            </div><!-- container -->
 
-        <!--
-        <table class="data-display">
-            <thead>
-            <tr>
-                <th scope="col">Misc. Services</th>
-            </tr>
-            </thead>
-            <tr>
-                <td scope="row">
-                    <a class="textbutton" href="/cgi-bin/prot/rc-admin/computers/rc-machines">Edit RC Machines</a>
-                </td>
-            </tr>
-        </table>
-        -->
-        <div class="sectionsubtitle">Inventory Management</div>
-        <div class="content">
-            <a href="https://services.housing.berkeley.edu/inven/" class="button">Inventory Tool</a>
-        </div>
+            <div class="container">
 
-    </div>
-</section>
+                <a target="_blank" href="http://www.gooogle.com" class="button">Learn More</a>
+                <div class="sectiontitle">Projects</div>
 
+                <div class="item">
+                    <a target="_blank" href="http://www.gooogle.com">
+                        <img src="img/rexxu Logo.jpg">
+                    </a>
+                    <div class="description">
+                        <div class="title">Fake Project</div>
+                        <div class="by">July 5, 2018</div>
+                        <div class="view-site">
+                            <a target="_blank" href="http://www.gooogle.com">View Site</a>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="item">
+                    <a target="_blank" href="http://www.gooogle.com">
+                        <img src="img/rexxu Logo.jpg">
+                    </a>
+                    <div class="description">
+                        <div class="title">Fake Project</div>
+                        <div class="by">July 5, 2018</div>
+                        <div class="view-site">
+                            <a target="_blank" href="http://www.gooogle.com">View Site</a>
+                        </div>
+                    </div>
+                </div>
 
-</body></html>
+                <div class="item">
+                    <a target="_blank" href="http://www.gooogle.com">
+                        <img src="img/rexxu Logo.jpg">
+                    </a>
+                    <div class="description">
+                        <div class="title">Fake Project</div>
+                        <div class="by">July 5, 2018</div>
+                        <div class="view-site">
+                            <a target="_blank" href="http://www.gooogle.com">View Site</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- container -->
+
+		</main>
+
+		<footer>
+			<p id="about">Rex Xu, 2020 UC Berkeley</p>
+			<a target="_blank" href="http://www.rexhoushunxu.com" class="footer-button">Contact</a>
+			<div id="social-media-container">
+				<div class="social-media-item"></div>
+				<div class="social-media-item"></div>
+				<div class="social-media-item"></div>
+			</div>
+		</footer>
+	</div> <!-- wrapper -->
+
+	<script>
+
+	</script>
+</body>
+
+</html>
